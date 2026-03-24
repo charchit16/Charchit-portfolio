@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { useOS, portfolioData } from "@/lib/os-context"
+import { ParticleNetwork } from "./particle-network"
 
 export function LoginScreen() {
   const { setPhase } = useOS()
@@ -29,14 +30,14 @@ export function LoginScreen() {
 
   return (
     <div
-      className="fixed inset-0 flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3o78wwXvvWGySd01MSS5OzgRVFo0Yq.png')`,
-        backgroundSize: "cover",
-      }}
+      className="fixed inset-0 flex flex-col items-center justify-center"
+      style={{ background: "#080810" }}
     >
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/25 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-black/30" style={{ zIndex: 0 }} />
+
+      {/* Neon particle network */}
+      <ParticleNetwork />
 
       {/* Lock screen — time + swipe up hint */}
       {!showLogin && (

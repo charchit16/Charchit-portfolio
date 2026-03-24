@@ -6,6 +6,7 @@ import { Taskbar } from "./taskbar"
 import { StartMenu } from "./start-menu"
 import { ContextMenu } from "./context-menu"
 import { WindowManager } from "./window-manager"
+import { ParticleNetwork } from "./particle-network"
 import Image from "next/image"
 
 interface DesktopIcon {
@@ -175,16 +176,10 @@ export function Desktop() {
   }
   
   return (
-    <div className="fixed inset-0 overflow-hidden">
-      {/* Windows 11 Dark Wallpaper */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-3o78wwXvvWGySd01MSS5OzgRVFo0Yq.png')`,
-          backgroundSize: 'cover'
-        }}
-      />
-      
+    <div className="fixed inset-0 overflow-hidden" style={{ background: "#080810" }}>
+      {/* Neon particle network background */}
+      <ParticleNetwork />
+
       {/* Desktop Area */}
       <div 
         className="absolute inset-0 pb-12 p-2"
