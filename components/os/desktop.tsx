@@ -84,6 +84,24 @@ const desktopIcons: DesktopIcon[] = [
     appId: "terminal", 
     iconUrl: "https://img.icons8.com/fluency/96/console.png"
   },
+  { 
+    id: "achievements", 
+    name: "Achievements", 
+    appId: "achievements", 
+    iconUrl: "https://img.icons8.com/fluency/96/trophy.png"
+  },
+  { 
+    id: "certifications", 
+    name: "Certifications", 
+    appId: "certifications", 
+    iconUrl: "https://img.icons8.com/fluency/96/certificate.png"
+  },
+  { 
+    id: "experience", 
+    name: "Experience", 
+    appId: "experience", 
+    iconUrl: "https://img.icons8.com/fluency/96/briefcase.png"
+  },
 ]
 
 export function Desktop() {

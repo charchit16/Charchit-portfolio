@@ -10,6 +10,9 @@ import { ResumeApp } from "../apps/resume-app"
 import { ContactApp } from "../apps/contact-app"
 import { SettingsApp } from "../apps/settings-app"
 import { TerminalApp } from "../apps/terminal-app"
+import { AchievementsApp } from "../apps/achievements-app"
+import { CertificationsApp } from "../apps/certifications-app"
+import { ExperienceApp } from "../apps/experience-app"
 
 const appIcons: Record<string, string> = {
   "file-explorer": "https://img.icons8.com/fluency/48/folder-invoices--v1.png",
@@ -19,7 +22,10 @@ const appIcons: Record<string, string> = {
   "resume": "https://img.icons8.com/fluency/48/pdf-2.png",
   "contact": "https://img.icons8.com/fluency/48/new-post.png",
   "settings": "https://img.icons8.com/fluency/48/settings.png",
-  "terminal": "https://img.icons8.com/fluency/48/console.png"
+  "terminal": "https://img.icons8.com/fluency/48/console.png",
+  "achievements": "https://img.icons8.com/fluency/48/trophy.png",
+  "certifications": "https://img.icons8.com/fluency/48/certificate.png",
+  "experience": "https://img.icons8.com/fluency/48/briefcase.png"
 }
 
 export function WindowManager() {
@@ -43,6 +49,12 @@ export function WindowManager() {
         return <SettingsApp />
       case "terminal":
         return <TerminalApp />
+      case "achievements":
+        return <AchievementsApp />
+      case "certifications":
+        return <CertificationsApp />
+      case "experience":
+        return <ExperienceApp />
       default:
         return <div className="p-4 text-white/60">Unknown application</div>
     }

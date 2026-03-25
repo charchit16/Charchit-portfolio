@@ -19,6 +19,9 @@ const allApps: AppItem[] = [
   { id: "contact", name: "Contact", iconUrl: "https://img.icons8.com/fluency/48/new-post.png" },
   { id: "settings", name: "Settings", iconUrl: "https://img.icons8.com/fluency/48/settings.png" },
   { id: "terminal", name: "Command Prompt", iconUrl: "https://img.icons8.com/fluency/48/console.png" },
+  { id: "achievements", name: "Achievements", iconUrl: "https://img.icons8.com/fluency/48/trophy.png" },
+  { id: "certifications", name: "Certifications", iconUrl: "https://img.icons8.com/fluency/48/certificate.png" },
+  { id: "experience", name: "Experience", iconUrl: "https://img.icons8.com/fluency/48/briefcase.png" },
 ]
 
 const pinnedApps: AppItem[] = [

@@ -95,7 +95,7 @@ export const portfolioData = {
 
 // Window types
 export type WindowId = string
-export type AppId = "file-explorer" | "about" | "projects" | "skills" | "resume" | "contact" | "settings" | "terminal"
+export type AppId = "file-explorer" | "about" | "projects" | "skills" | "resume" | "contact" | "settings" | "terminal" | "achievements" | "certifications" | "experience"
 
 export interface WindowState {
   id: WindowId
@@ -181,7 +181,10 @@ const defaultWindowSizes: Record<AppId, { width: number; height: number }> = {
   "resume": { width: 800, height: 650 },
   "contact": { width: 500, height: 400 },
   "settings": { width: 700, height: 500 },
-  "terminal": { width: 800, height: 500 }
+  "terminal": { width: 800, height: 500 },
+  "achievements": { width: 820, height: 580 },
+  "certifications": { width: 780, height: 540 },
+  "experience": { width: 860, height: 600 }
 }
 
 const appTitles: Record<AppId, string> = {
@@ -192,7 +195,10 @@ const appTitles: Record<AppId, string> = {
   "resume": "Resume",
   "contact": "Contact",
   "settings": "Settings",
-  "terminal": "Command Prompt"
+  "terminal": "Command Prompt",
+  "achievements": "Achievements",
+  "certifications": "Certifications",
+  "experience": "Experience"
 }
 
 export function OSProvider({ children }: { children: ReactNode }) {
